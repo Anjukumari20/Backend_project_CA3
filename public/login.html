@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        max-width: 400px;
+        max-height: 600px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding-bottom: 40px;
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: rgb(6, 6, 93);
+    }
+    .error {
+        color: red;
+    }
+    #heading{
+        text-align: center;
+        margin-top: 10%;
+    }
+    body{
+        
+        background-color: pink;
+    }
+    .container{
+        background-color: #fff;
+    }
+    a{
+        color: #fff;
+        text-decoration: none;
+    }
+    #singup{
+        color: blue;
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+    <h2 id="heading">Login Form</h2>
+<div class="container">
+    
+    <form id="loginForm" onsubmit="return validateForm()" method="post" action="/login">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+
+
+        <button type="submit"> <a href="HTML.html">Login</a></button>
+        <p>Don't have an account ?.. <a href="singup.html" id="singup">SingUp</a></p>
+    </form>
+    <div id="error-msg" class="error"></div>
+</div>
+
+<script>
+    function validateForm() {
+        var username = document.getElementById('username').value;
+        var password = document.getElementById('password').value;
+        var errorMessage = document.getElementById('error-msg');
+
+        if (username.trim() === '') {
+            errorMessage.innerHTML = 'Please enter your username.';
+            return false;
+        }
+
+        if (password.trim() === '') {
+            errorMessage.innerHTML = 'Please enter your password.';
+            return false;
+        }
+
+        // Here you can add further validation if needed
+
+        // If everything is valid, you can proceed with login
+        return true;
+    }
+</script>
+
+</body>
+</html>

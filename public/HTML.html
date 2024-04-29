@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tuck Shop</title>
+    <!--to link logo-->
+    <link rel="icon" type="image/icon"  class="headlogo" href="image/snackon_logo.jpg">
+    <!--code for font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--code for linking css file-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--code for linking js-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--this meta tag is for mobile view-->
+    <!--link from swiper js.com-->
+    <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    
+    
+
+
+    
+</head>
+<body>
+    <!--header section-->
+    
+    <header class="header">
+        
+        
+        <a href="#" class="logo"><i class="fa fa-shopping-basket" aria-hidden="true"></i> Tuckshop</a>
+        
+        <nav class="navbar">
+           <a href="#home">home</a> 
+           <a href="#features">features</a> 
+           <a href="#products">products</a>
+           <a href="#categories">categories</a>
+           <a href="#review">review</a>   
+
+
+        </nav>
+    <!--
+        <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">products</a>
+            <a href="#catagories">Catagories</a>
+            <a href="#home">home</a> 
+    -->
+            
+       
+
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-search" id="search-btn"></div>
+            <div class="fa fa-shopping-cart" id="cart-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
+        
+        <form class="search-form" >
+            <input type="search" id="search-box" placeholder="Search Here...">
+            <label for="search-box" class="fa fa-search"></label>
+        </form>
+
+        <div class="shopping-cart ">
+            
+
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/kurkure_4.jpeg" >
+            
+             <div class="content">
+                <h3>kurkure</h3>
+                <span class="price">Rs.20/-</span>
+            </div>
+            </div>
+
+           
+            
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/dairymilk.jpeg" >
+                <div class="content">
+                <h3>DairyMilk</h3>
+                <span class="price">Rs.45/-</span>
+            </div>
+        </div>
+
+            
+            <div class="box">
+                <i class="fa fa-trash"></i>
+                <img src="image/horlicks.jpeg" >
+              <div class="content">
+                <h3>Horlicks</h3>
+                <span class="price">Rs.250/-</span>
+            </div>
+        </div>
+
+            <div class="total">
+                <!--<h3>Total :Rs.305/-</h3>-->
+                Total:Rs.305/-
+            </div>
+                <a href="#" class="btn">Checkout</a>
+          
+
+
+
+                
+            
+
+            
+        </div>
+       
+        <form action="#" class="login-form">
+            <h3></h3>
+           <!-- <p id="p"></p>
+            <input type="email" placeholder="enter email" class="box">
+            <input type="password" placeholder="enter password" class="box">
+            <p>forgot password <a href="#">click here</a></p>
+            <p>don't have an account <a href="#">create now</a></p> 
+        <input type="submit" value="log out" class="btn" id="login"> -->
+           <a href="login.html"><button class="btn">logout</a></button>
+
+        </form>
+        
+
+    </header>
+    <!--banner section-->
+    <div class="contentImage">
+        <section  class="home" id="home">
+            <div class="content">
+                <h3><strong>💕...Explore <span style="color: green;">Delicious Delights</span> at Our Online Tuckshop....💕</strong></h3><br>
+                <h3>This website is designed for hostellers so they can make online orders from tuckshop it facilitates the ordering and delivery of essential items typically found in tuck shop, such as snacks,ice-creams, stationery, toiletries, and other daily necessities</h3>
+                
+                <a href="#products" class="btn">shop now</a>
+            </div>
+        </section>
+    </div>
+
+    <!--feature section-->
+    <section class="features" id="features">
+        <h1 class="heading">our <span>Features</span></h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="image/door_to_door_delivery.jpg" alt="">
+                <h3>Home delivery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#review" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="image/fast_delivery.jpg" alt="">
+                <h3>fast delivery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#review" class="btn">read more</a>
+            </div>
+
+            <div class="box">
+                <img src="image/free_delivery.jpg" alt="">
+                <h3>free delivery</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <a href="#review" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+
+    <!--our product section-->
+    <section class="products" id="products">
+        <h1 class="heading">our <span>products</span></h1>
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/snactile.webp">
+                    <h1>snack tile</h1>
+                    <div class="price">rs.10/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add  to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/horlicks.jpeg">
+                    <h1>horlicks</h1>
+                    <div class="price">rs.500/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add  to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/namkeen.jpeg">
+                    <h1>namkeen</h1>
+                    <div class="price">rs.20/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add  to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/dairymilk.jpeg">
+                    <h1>dairymilk</h1>
+                    <div class="price">rs.45/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add  to cart</a>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="image/bourbon_bis.jpeg">
+                    <h1>bourbon</h1>
+                    <div class="price">rs.10/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        
+                    </div>
+                    <a href="#" class="btn">add  to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/salted peanuts.jpeg">
+                    <h1>salted peanuts</h1>
+                    <div class="price">rs.10/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add  to cart</a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+        <div class="swiper product-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="image/tedemede.jpeg">
+                    <h1>tedhe medhe</h1>
+                    <div class="price">rs.20/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add  to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/takatak_kurkure.jpeg">
+                    <h1>takatak</h1>
+                    <div class="price">rs.20/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add  to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/hide&sick.jpeg">
+                    <h1>Hide & Seek</h1>
+                    <div class="price">rs.30/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add  to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/surf excel.jpg">
+                    <h1>surf excel</h1>
+                    <div class="price">rs.50/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        
+                    </div>
+                    <a href="#" class="btn">add  to cart</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="image/kitkat.jpeg">
+                    <h1>kitKat</h1>
+                    <div class="price">rs.20/-</div>
+                    <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+                    <a href="#" class="btn">add  to cart</a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!--code for categories -->
+    <section class="categories" id="categories">
+        <h1 class="heading">product <span>categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="image/ice cream.jpg" alt="">
+                <h3>ice creams</h3>
+                <a href="#" class="btn">order now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/snacks.jpg" alt="">
+                <h3>snacks</h3>
+                <a href="#" class="btn">order now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/stationaryitems_img.jpeg" alt="">
+                <h3>stationary items</h3>
+                <a href="#" class="btn">order now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/cold drinks.jpg" alt="">
+                <h3>cold drinks</h3>
+                <a href="#" class="btn">order now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/chocolates1.jpg">
+                <h3>chocolates</h3>
+                <a href="#" class="btn">order now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/face-washes.jpg">
+                <h3>face washes</h3>
+                <a href="#" class="btn">order now</a>
+            </div>
+
+            
+            <div class="box">
+                <img src="image/detergents.jpg">
+                <h3>detergent</h3>
+                <a href="#" class="btn">order now</a>
+            </div>
+
+            <div class="box">
+                <img src="image/keychains.webp">
+                <h3>keychains</h3>
+                <a href="#" class="btn">order now</a>
+            </div>
+
+
+
+
+
+    </section>
+
+<!--review-->
+   <section class="review" id="review">
+    <h1 class="heading">customer's <span>review</span></h1>
+
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="image/girl1.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium 
+                    expedita error ut quisquam fuga dignissimos explicabo, provident nisi
+                     accusantium illum voluptates quia repellat hic, beatae dolorum in atque quod minus.</p>
+                     <h3>suma</h3>
+                     <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                       
+                    </div>
+            </div>
+
+
+            <div class="swiper-slide box">
+                <img src="image/girl2.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium 
+                    expedita error ut quisquam fuga dignissimos explicabo, provident nisi
+                     accusantium illum voluptates quia repellat hic, beatae dolorum in atque quod minus.</p>
+                     <h3>sravani</h3>
+                     <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                       
+                    </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/girl3.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium 
+                    expedita error ut quisquam fuga dignissimos explicabo, provident nisi
+                     accusantium illum voluptates quia repellat hic, beatae dolorum in atque quod minus.</p>
+                     <h3>manisha</h3>
+                     <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                    </div>
+            </div>
+
+            <div class="swiper-slide box">
+                <img src="image/girl4.jpg" alt="">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium 
+                    expedita error ut quisquam fuga dignissimos explicabo, provident nisi
+                     accusantium illum voluptates quia repellat hic, beatae dolorum in atque quod minus.</p>
+                     <h3>Anju</h3>
+                     <div class="stars">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+   </section>
+
+   <!--Footer code-->
+   <section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>tuck shop <i class="fa fa-shopping-basket"></i></h3>
+            <p>Feel free to follow us on social media handlers all the links are given below.</p>
+
+            <div class="share">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"><i class="fa fa-phone"></i> +91 8978199975</a>
+            <a href="#" class="links"><i class="fa fa-phone"></i> +91 8919867306</a>
+            <a href="#" class="links"><i class="fa fa-envelope"></i> website@info</a>
+            <a href="#" class="links"><i class="fa fa-map-marker"></i>Ap,india</a>
+            
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i>home</a>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i>features</a>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i>review</a>
+            <a href="#" class="links"><i class="fa fa-arrow-right"></i>categories</a>
+            
+            
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>suscribe for latest updates</p>
+            <input type="email" class="email" placeholder="enter email">
+            <input type="submit" class="btn" value="suscribe"><br>
+            <img src="image/payment cards.jpg" class="payment-img">
+
+        </div>
+    </div>
+
+    <div class="credit">created  by <span>Anju kumari </span>| all rights reserved</div>
+
+   </section>
+
+
+<!--code for linking js-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="javascript.js"></script>
+</body>
+</html>
